@@ -510,7 +510,7 @@ FAQ
 ### Toro?
 * [Toro](http://en.wikipedia.org/wiki/Tuna) is robust, quick, and values strength in numbers.
 * [Toro](http://en.wikipedia.org/wiki/Bull) is durable and runs a little large.
-* [Toro](http://en.wikipedia.org/wiki/T%C5%8Dr%C5%8D) brings visibility.
+* [Toro](http://en.wikipedia.org/wiki/T%C5%8Dr%C5%8D) values visibility.
 
 
 Notes
