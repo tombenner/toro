@@ -267,7 +267,7 @@ big_jobs = Toro::Job.where("(properties->'comments_count')::int > ?", 100)
 
 #### Associating Jobs with Other Models
 
-You can create associations between jobs and other models using them:
+You can create associations between jobs and other models using job properties:
 
 ```ruby
 class User < ActiveRecord::Base
