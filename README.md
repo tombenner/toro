@@ -17,7 +17,7 @@ An extensive dashboard:
 * Sort jobs by queue, worker, start time, queued time, duration, customizable name, status
 * Filter jobs by queue, worker, customizable name, status
 * Stacked histograms show the status distribution for each queue
-* A process table showing which machines/processes are active and which jobs they're running
+* A process table shows which machines/processes are active and which jobs they're running
 * Buttons for manually retrying failed jobs
 * Job detail view with in-depth job information:
   * Basics: worker class, arguments, start time, duration, process name
