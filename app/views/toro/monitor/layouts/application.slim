@@ -1,0 +1,32 @@
+doctype html
+html lang="en"
+  meta charset="utf-8"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+  title= content_for?(:title) ? yield(:title) : app_name
+  = stylesheet_link_tag "toro/monitor/application"
+  = csrf_meta_tags
+
+  body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          a.btn.btn-navbar data-toggle="collapse" data-target=".nav-collapse"
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+          = link_to app_name, root_path, class: "brand"
+
+          .nav-collapse
+            ul.nav
+              li class=(params[:controller] == 'toro/monitor/jobs' && params[:action] != 'chart' ? 'active' : '') = link_to "Jobs", root_path
+              li class=(params[:controller] == 'toro/monitor/queues' ? 'active' : '') = link_to "Queues", "#{root_path}queues"
+              li class=(params[:controller] == 'toro/monitor/processes' ? 'active' : '') = link_to "Processes", "#{root_path}processes"
+              li class=(params[:controller] == 'toro/monitor/jobs' && params[:action] == 'chart' ? 'active' : '') = link_to "Chart", "#{root_path}chart"
+
+    .container
+      = yield
+
+    = javascript_include_tag "toro/monitor/application"
+    - Toro::Monitor.options[:javascripts].each do |javascript|
+      = javascript_include_tag javascript

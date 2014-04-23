@@ -1,0 +1,25 @@
+window.ToroMonitor =
+  settings:
+    api_url: (path) ->
+      "<%= Toro::Monitor.root_path %>api/#{path}"
+    charts: <%= Toro::Monitor.options[:charts].to_json %>
+    poll_interval: <%= Toro::Monitor.options[:poll_interval] %>
+
+$.timeago.settings.strings =
+  prefixAgo: null
+  prefixFromNow: null
+  suffixAgo: " ago"
+  suffixFromNow: " from now"
+  seconds: "1m"
+  minute: "1m"
+  minutes: "%dm"
+  hour: "1h"
+  hours: "%dh"
+  day: "1d"
+  days: "%dd"
+  month: "1mo"
+  months: "%dmo"
+  year: "1yr"
+  years: "%dyr"
+  wordSeparator: " "
+  numbers: []

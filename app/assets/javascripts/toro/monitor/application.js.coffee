@@ -1,0 +1,14 @@
+#= require jquery
+#= require toro/monitor/bootstrap.min
+#= require toro/monitor/bootstrap-select.min
+#= require toro/monitor/jquery.timeago
+#= require toro/monitor/d3
+#= require toro/monitor/datatables
+#= require toro/monitor/datatables.bootstrap
+#= require toro/monitor/datatables.standing_redraw
+#= require toro/monitor/initialize
+#= require toro/monitor/abstract_jobs_table
+#= require toro/monitor/jobs_table
+#= require toro/monitor/processes_table
+#= require toro/monitor/queue_jobs_table
+#= require toro/monitor/chart

@@ -1,0 +1,6 @@
+test:
+  adapter: postgresql
+  database: my_database
+  pool: 25
+  username: my_username
+  password: my_password
