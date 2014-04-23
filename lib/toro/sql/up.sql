@@ -20,7 +20,8 @@ CREATE TABLE toro_jobs (
 
 END $$ LANGUAGE plpgsql;
 
-CREATE FUNCTION toro_notify() RETURNS TRIGGER AS $$ BEGIN
+CREATE FUNCTION toro_notify() RETURNS TRIGGER AS $$
+BEGIN
   PERFORM pg_notify('toro_' || new.queue, '');
   RETURN NULL;
 END $$ LANGUAGE plpgsql;
