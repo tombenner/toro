@@ -17,3 +17,5 @@ namespace :toro do
     Toro::Database.down
   end
 end
+
+task :toro => 'toro:start'

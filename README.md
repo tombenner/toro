@@ -96,7 +96,7 @@ MyWorker.perform_async(15)
 
 Start Toro in the root directory of your Rails app:
 ```bash
-rake toro:start
+rake toro
 ```
 
 Basics
@@ -123,13 +123,13 @@ end
 To set a process's queue, use `-q`:
 
 ```bash
-rake toro:start -- -q users
+rake toro -- -q users
 ```
 
 Or specify multiple queues:
 
 ```bash
-rake toro:start -- -q users -q comments
+rake toro -- -q users -q comments
 ```
 
 ### Concurrency
@@ -137,7 +137,7 @@ rake toro:start -- -q users -q comments
 To specify a process's concurrency (how many jobs it can run simultaneously), use `-c`:
 
 ```bash
-rake toro:start -- -c 10
+rake toro -- -c 10
 ```
 
 ### Scheduled Jobs
