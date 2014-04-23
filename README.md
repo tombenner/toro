@@ -344,15 +344,6 @@ The UI uses polling to update its data. By default, the polling interval is 3000
 Toro::Monitor.options[:poll_interval] = 5000
 ```
 
-### Custom Statuses
-
-The UI's status filter and histograms show the most common job statuses, but if you'd like to add additional statuses to them (for example, if you have added custom statuses through middleware), you can make the UI include them like so:
-
-```ruby
-# config/initializers/toro.rb
-Toro::Monitor::Job.add_status('my_custom_status')
-```
-
 ### Custom Job Views
 
 When you click on a job, a modal showing its properties is displayed. You can add subviews to this modal by creating a view in your app and calling `Toro::Monitor::CustomViews.add`, passing it the subview's title, the subview's filepath, and a block. The subview is only rendered if the block evaluates to true for the given job.
