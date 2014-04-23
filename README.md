@@ -438,7 +438,7 @@ mount Toro::Monitor::Engine => '/toro', :constraints => AdminConstraint.new
 
 Checks a `User` model instance that responds to `admin?`
 
-```
+```ruby
 # lib/admin_constraint.rb
 class AdminConstraint
   def matches?(request)
