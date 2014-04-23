@@ -44,10 +44,12 @@ An extensive dashboard:
 
 #### UI
 
-[<img src="https://raw.github.com/tombenner/toro/master/examples/jobs.png" width="375" />](https://raw.github.com/tombenner/toro/master/examples/jobs.png)
-[<img src="https://raw.github.com/tombenner/toro/master/examples/queues.png" width="375" />](https://raw.github.com/tombenner/toro/master/examples/queues.png)
-[<img src="https://raw.github.com/tombenner/toro/master/examples/job.png" width="375" />](https://raw.github.com/tombenner/toro/master/examples/job.png)
-[<img src="https://raw.github.com/tombenner/toro/master/examples/chart.png" width="375" />](https://raw.github.com/tombenner/toro/master/examples/chart.png)
+Toro has an extensive dashboard that provides in-depth information about jobs, queues, processes, and more:
+
+[<img src="https://raw.github.com/tombenner/toro/master/examples/jobs.png" width="48%" />](https://raw.github.com/tombenner/toro/master/examples/jobs.png)
+[<img src="https://raw.github.com/tombenner/toro/master/examples/job.png" width="48%" />](https://raw.github.com/tombenner/toro/master/examples/job.png)
+[<img src="https://raw.github.com/tombenner/toro/master/examples/queues.png" width="48%" />](https://raw.github.com/tombenner/toro/master/examples/queues.png)
+[<img src="https://raw.github.com/tombenner/toro/master/examples/chart.png" width="48%" />](https://raw.github.com/tombenner/toro/master/examples/chart.png)
 
 Installation
 ------------
