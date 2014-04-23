@@ -180,8 +180,8 @@ The error classes and times of retried jobs are stored as job properties.
 * started_at - When the job was started
 * finished_at - When the job finished (regardless of whether it succeeded or failed)
 * status - `queued`, `running`, `complete`, `failed`, or `scheduled`
-* started_by
-* properties
+* started_by - Host and PID of the process running the job (e.g. `ip-10-55-10-151:1623`)
+* properties - An hstore containing customizable job properties
 
 
 Job Customization
