@@ -75,7 +75,7 @@ describe Toro::Fetcher do
       retrieved.id.should == job.id
     end
 
-    it "does not retrieve scheduled jobs that aren't ready yet" do
+    it "does not retrieve scheduled jobs that aren't scheduled yet" do
       fetcher = Toro::Fetcher.new(manager: Toro::Manager.new)
       Toro::Job.create!(
         queue: 'default',
