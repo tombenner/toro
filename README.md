@@ -1,6 +1,6 @@
 Toro
 ====
-Full-featured background processing for Ruby & PostgreSQL
+Transparent, extensible background processing for Ruby & PostgreSQL
 
 Overview
 --------

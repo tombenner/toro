@@ -3,7 +3,7 @@ require File.expand_path('../lib/toro/version', __FILE__)
 Gem::Specification.new do |s|
   s.authors       = ['Tom Benner']
   s.email         = ['tombenner@gmail.com']
-  s.description = s.summary = %q{Full-featured background processing for Ruby & PostgreSQL}
+  s.description = s.summary = %q{Transparent, extensible background processing for Ruby & PostgreSQL}
   s.homepage      = 'https://github.com/tombenner/toro'
 
   s.files         = Dir['{lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']
