@@ -13,10 +13,10 @@ module Toro
       @is_done = false
       raise 'No fetcher provided' if @fetcher.blank?
       raise 'No manager provided' if @manager.blank?
+      @manager.register_actor(:listener, self)
     end
 
     def start
-      @manager.register_actor(:listener, self)
       Toro::Database.with_connection do
         Toro::Database.raw_connection.async_exec(channels.map { |channel| "LISTEN #{channel}" }.join('; '))
         wait_for_notify
