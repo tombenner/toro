@@ -1,7 +1,7 @@
 PATH
   remote: ..
   specs:
-    toro (0.1.0)
+    toro (0.1.1)
       celluloid (>= 0.15.2)
       jquery-datatables-rails
       nested-hstore
