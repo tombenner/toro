@@ -20,7 +20,7 @@ An extensive dashboard:
 * A process table shows which machines/processes are active and which jobs they're running
 * Buttons for manually retrying failed jobs
 * Job detail view with in-depth job information:
-  * Basics: worker class, arguments, start time, duration, process name
+  * Basics: worker class, arguments, start time, duration, process host/PID
   * Exception class, message, and backtrace of failed jobs
   * A list of the exceptions and start times of retried jobs
   * Customizable job properties
