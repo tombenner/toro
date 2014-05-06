@@ -8,7 +8,7 @@ require 'socket'
 # Self
 directory = File.dirname(File.absolute_path(__FILE__))
 require "#{directory}/toro/version.rb"
-Dir.glob("#{directory}/toro/*.rb") { |file| require file }
+Dir.glob("#{directory}/toro/*.rb").sort.each { |file| require file }
 Dir.glob("#{directory}/toro/middleware/**/*.rb") { |file| require file }
 Dir.glob("#{directory}/generators/**/*.rb") { |file| require file }
 
