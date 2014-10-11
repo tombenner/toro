@@ -31,10 +31,12 @@ module Toro
     protected
 
     def wait_for_notify
-      Toro::Database.raw_connection.wait_for_notify(Toro.options[:listen_interval]) do |channel, pid, payload|
-        @fetcher.notify
+      loop do
+        Toro::Database.raw_connection.wait_for_notify(Toro.options[:listen_interval]) do |channel, pid, payload|
+          @fetcher.notify
+        end
+        break if @is_done
       end
-      wait_for_notify unless @is_done
     end
 
     def channels
