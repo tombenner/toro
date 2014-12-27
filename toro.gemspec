@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
 
   # Monitor
   s.add_dependency 'slim'
-  s.add_dependency 'jquery-datatables-rails'
+  s.add_dependency 'jquery-datatables-rails', '>= 2.1.10.0.2'
   s.add_dependency 'rails-datatables'
 
   s.add_development_dependency 'appraisal'
