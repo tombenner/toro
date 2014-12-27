@@ -4,10 +4,12 @@ module Toro
 
     class << self
       def up
+        connection.enable_extension :hstore if ActiveRecord::VERSION::MAJOR >= 4
         execute_file('up')
       end
 
       def down
+        connection.disable_extension :hstore if ActiveRecord::VERSION::MAJOR >= 4
         execute_file('down')
       end
 
