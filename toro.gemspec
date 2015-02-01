@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'celluloid', '>= 0.15.2'
   s.add_dependency 'rails', '>= 3.0'
   s.add_dependency 'pg'
+  s.add_dependency 'activerecord-postgres-hstore'
   s.add_dependency 'nested-hstore'
 
   # Monitor
