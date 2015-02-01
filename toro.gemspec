@@ -6,7 +6,8 @@ Gem::Specification.new do |s|
   s.description = s.summary = %q{Transparent, extensible background processing for Ruby & PostgreSQL}
   s.homepage      = 'https://github.com/tombenner/toro'
 
-  s.files         = Dir['{lib}/**/*'] + ['MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- spec/*`.split("\n")
   s.name          = 'toro'
   s.require_paths = ['lib']
   s.version       = Toro::VERSION
